@@ -1,9 +1,9 @@
 # {{ SHORT_DESCRIPTION }}
 #
-#     docker build --rm=true -t plugins/{{ PLUGIN_NAME }} .
+#     docker build --rm=true -t {{ ORG_OR_AUTHOR_USERNAME }}/{{ PLUGIN_NAME }} .
 
 FROM gliderlabs/alpine:3.2
-MAINTAINER Your Name <your@name.com>
+MAINTAINER {{ AUTHOR_NAME }} <{{ AUTHOR_EMAIL }}>
 
 RUN apk-install python3
 RUN mkdir -p /opt/drone
