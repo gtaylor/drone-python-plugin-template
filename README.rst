@@ -1,5 +1,5 @@
 {{ PLUGIN_NAME }}
-=================
+{{ TITLE_UNDERLINE }}
 
 {{ SHORT_DESCRIPTION }}
 
