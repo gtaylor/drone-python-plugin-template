@@ -1,18 +1,16 @@
-drone-hipchat
-=============
+{{ PLUGIN_NAME }}
+=================
 
-Drone plugin for sending HipChat notifications
-
+{{ SHORT_DESCRIPTION }}
 
 Overview
 --------
 
-This plugin is responsible for sending build notifications to your
-HipChat channel:
+Run the plugin directly after installing requirements:
 
 .. code-block:: bash
 
-    python send-notification.py <<EOF
+    python plugin/main.py <<EOF
     {
         "repo" : {
             "owner": "foo",
@@ -44,11 +42,11 @@ HipChat channel:
 Docker
 ------
 
-Send a HipChat notification:
+Alternatively, run the plugin directly from a built Docker image:
 
 .. code-block:: bash
 
-    docker run -i gtaylor/drone-hipchat <<EOF
+    docker run -i {{ ORG_OR_AUTHOR_USERNAME }}/{{ PLUGIN_NAME }} <<EOF
     {
         "repo" : {
             "owner": "foo",
@@ -81,5 +79,5 @@ Send a HipChat notification:
 License
 -------
 
-drone-hipchat is licensed under the BSD 3-Clause License. A copy is included
+{{ PLUGIN_NAME }} is licensed under the Apache License. A copy is included
 in this repository.

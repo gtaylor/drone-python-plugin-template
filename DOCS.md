@@ -10,6 +10,6 @@ The following is a sample {{ PLUGIN_NAME }} configuration in your
 ```yaml
 notify:
   {{ PLUGIN_NAME }}:
-    image: author/{{ PLUGIN_NAME }}
+    image: {{ ORG_OR_AUTHOR_USERNAME }}/{{ PLUGIN_NAME }}
     url: http://mockbin.org/
 ```
