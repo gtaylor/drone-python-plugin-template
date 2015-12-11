@@ -16,7 +16,7 @@ def main():
     vargs = payload["vargs"]
 
     # Formulate the POST request.
-    data = payload
+    data = payload["build"]
     response = requests.post(vargs["url"], data=data)
     response.raise_for_status()
 
