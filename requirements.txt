@@ -1,2 +1,2 @@
 requests==2.8.1
-drone==0.2.0
+drone==0.3.0
